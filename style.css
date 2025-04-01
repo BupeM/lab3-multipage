@@ -1,0 +1,187 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+section div {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+section div h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+section div p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.service-img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem; 
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        flex-direction: column;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header h1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form button {
+    transition: background-color 0.3s ease;
+}
