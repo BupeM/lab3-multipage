@@ -14,5 +14,5 @@ The key features used are:
 ->The service cards whith different effects for better engagement
 ->Animations and transitions like keyframes animation which ensures the heading fades in when the page loads and hover effects which add some cool interaction features.
 
-UPDATE: added new features for interactivity using javascript. A theme toggle was added as well as form enhancement and validation, a FAQ section and a load users button.
+UPDATE: added new features for interactivity using javascript. A theme toggle was added as well as form enhancement and validation, an interactive FAQ section and a load users button. I've also added a back to top button as a bonus!
 
